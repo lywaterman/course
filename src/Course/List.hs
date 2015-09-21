@@ -172,8 +172,8 @@ filter f (h :. t) = if (f h)
   List a
   -> List a
   -> List a
-(++) =
-  error "todo: Course.List#(++)"
+(++) x y = foldRight (:.) y x
+  --error "todo: Course.List#(++)"
 
 infixr 5 ++
 
